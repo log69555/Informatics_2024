@@ -5,6 +5,9 @@ import (
 	"math"
 )
 
+const a float64 = 1.35
+const b float64 = 0.98
+
 func Calculate(a, b, x float64) float64 {
 	y := math.Cbrt(a*x+b) / (math.Log(x) * math.Log(x))
 
@@ -25,4 +28,15 @@ func TaskA(x_f, x_end, step float64) []float64 {
 		list = append(list, i)
 	}
 	return list
+}
+
+func Show_lab4() {
+	A := TaskA(1.14, 4.24, 0.62)
+	var B []float64 = []float64{0.35, 1.28, 3.51, 5.21, 4.16}
+
+	fmt.Println("Задача A:")
+	Enter(a, b, A)
+
+	fmt.Println("Задача B:")
+	Enter(a, b, B)
 }
