@@ -17,5 +17,4 @@ func main() {
 	fmt.Println("\n\nЛабороторная 6:")
 
 	lab6.Show_lab6()
-
 }

@@ -2,59 +2,59 @@ package lab6
 
 import "fmt"
 
-type Character struct {
-	name  string
-	class string
-	level int
+type Table struct {
+	title string
+	size  int
+	color string
 }
 
-func (c *Character) change_class(new_class string) {
-	(*c).class = new_class
-
-}
-
-func (c *Character) change_level(new_level int) {
-	(*c).level = new_level
+func (t *Table) change_size(new_size int) {
+	(*t).size = new_size
 
 }
 
-func (c *Character) new_characters(new_name, new_class string, new_level int) {
-	(*c).name = new_name
-	(*c).class = new_class
-	(*c).level = new_level
+func (t *Table) change_color(new_color string) {
+	(*t).color = new_color
+
 }
 
-func (c Character) Name() string {
-	return c.name
+func (t *Table) new_table(new_title, new_color string, new_size int) {
+	(*t).title = new_title
+	(*t).size = new_size
+	(*t).color = new_color
 }
 
-func (c Character) Class() string {
-	return c.class
+func (t Table) Title() string {
+	return t.title
 }
 
-func (c Character) Level() int {
-	return c.level
+func (t Table) Size() int {
+	return t.size
+}
+
+func (t Table) Color() string {
+	return t.color
 }
 
 func Show_lab6() {
-	Hero := Character{
-		name:  "Игорь",
-		class: "Рыцарь",
-		level: 4,
+	My_table := Table{
+		title: "Хай - тек",
+		size:  5,
+		color: "красный",
 	}
 
-	fmt.Println("Характеристики персонажа: имя - ", Hero.Name(), " класс - ", Hero.Class(), " уровень - ", Hero.Level())
+	fmt.Println("Характеристики стола: название - ", My_table.Title(), "| размер - ", My_table.Size(), "| цвет - ", My_table.Color())
 
-	Hero.change_class("Волшебник")
-	Hero.change_level(6)
-
-	fmt.Println("================================================================================================")
-	fmt.Println("Изменены класс и уровень с помощью методов change_class и change_level:")
-	fmt.Println("Характеристики персонажа: имя - ", Hero.Name(), " класс - ", Hero.Class(), " уровень - ", Hero.Level())
-
-	Hero.new_characters("Паша", "Целитель", 10)
+	My_table.change_size(6)
+	My_table.change_color("бирюзовый")
 
 	fmt.Println("================================================================================================")
-	fmt.Println("Полностью изменем персонаж с помощью метода new_character:")
-	fmt.Println("Характеристики персонажа: имя - ", Hero.Name(), " класс - ", Hero.Class(), " уровень - ", Hero.Level())
+	fmt.Println("Изменены размер и цвет с помощью методов change_size и change_color:")
+	fmt.Println("Характеристики стола: название - ", My_table.Title(), "| размер - ", My_table.Size(), "| цвет - ", My_table.Color())
+
+	My_table.new_table("Стол-раскладушка", "Черный", 9)
+
+	fmt.Println("================================================================================================")
+	fmt.Println("Полностью изменены характеристики стола с помощью метода new_table:")
+	fmt.Println("Характеристики стола: название - ", My_table.Title(), "| размер - ", My_table.Size(), "| цвет - ", My_table.Color())
 }
