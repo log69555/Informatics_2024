@@ -10,12 +10,10 @@ type Table struct {
 
 func (t *Table) change_size(new_size int) {
 	(*t).size = new_size
-
 }
 
 func (t *Table) change_color(new_color string) {
 	(*t).color = new_color
-
 }
 
 func (t *Table) new_table(new_title, new_color string, new_size int) {
