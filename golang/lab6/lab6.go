@@ -10,12 +10,10 @@ type Character struct {
 
 func (c *Character) change_class(new_class string) {
 	(*c).class = new_class
-
 }
 
 func (c *Character) change_level(new_level int) {
 	(*c).level = new_level
-
 }
 
 func (c *Character) new_characters(new_name, new_class string, new_level int) {
