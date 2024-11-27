@@ -13,7 +13,6 @@ func Sum_Price(products []Product) float64 {
 const sale float64 = 0.12
 
 func Show_lab7() {
-
 	product1 := &Food{price: 10.2, name: "Бородинский", category: "Хлеб", brand: "Спас"}
 	product2 := &Furniture{price: 300.5, name: "Диван хай-тек", brand: "Good_furniture", color: "red"}
 	product3 := &Tools{price: 39.5, name: "отвёртка", brand: "leomax", category: "инструменты для дома"}
