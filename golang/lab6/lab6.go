@@ -8,7 +8,6 @@ type Table struct {
 	color string
 }
 
-
 func (t *Table) change_size(new_size int) {
 	(*t).size = new_size
 }
