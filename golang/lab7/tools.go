@@ -12,15 +12,7 @@ type Tools struct {
 }
 
 func (t *Tools) Sale(discount float64) error {
-	if t.price == 0 || t.brand == "" || t.name == "" || t.category == "" {
-		return errors.New("Вы заполнили не все поля для Tools")
-	}
-
-	if 0 > discount {
-		return errors.New("Скидка должна быть в диапозоне от 0 до 100 процентов")
-	}
-
-	if 100 < discount {
+	if (0 > discount) || (100 < discount) {
 		return errors.New("Скидка должна быть в диапозоне от 0 до 100 процентов")
 	}
 
