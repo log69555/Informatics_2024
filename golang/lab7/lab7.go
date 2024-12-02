@@ -28,9 +28,13 @@ func Show_lab7() {
 	fmt.Println("-----------------------------------------------------------------------")
 	fmt.Println("Характеристики продуктов до применения Change_specifications: ")
 
-	fmt.Println("product1: ", products[0].Get_info()[0], "|", products[0].Get_info()[1], "|", products[0].Get_info()[2])
-	fmt.Println("product2: ", products[1].Get_info()[0], "|", products[1].Get_info()[1], "|", products[1].Get_info()[2])
-	fmt.Println("product3: ", products[2].Get_info()[0], "|", products[2].Get_info()[1], "|", products[2].Get_info()[2])
+	list1 := products[0].Get_info()
+	list2 := products[1].Get_info()
+	list3 := products[2].Get_info()
+
+	fmt.Println("product1: ", list1[0], "|", list1[1], "|", list1[2])
+	fmt.Println("product2: ", list2[0], "|", list2[1], "|", list2[2])
+	fmt.Println("product3: ", list3[0], "|", list3[1], "|", list3[2])
 	fmt.Println("-----------------------------------------------------------------------")
 	products[0].Change_specifications("Кекс", "Новогодний", "Русский дар")
 	products[1].Change_specifications("Кресло - качалка", "New age", "black")
@@ -38,7 +42,11 @@ func Show_lab7() {
 
 	fmt.Println("Характеристики продуктов после применения Change_specifications: ")
 
-	fmt.Println("product1: ", products[0].Get_info()[0], "|", products[0].Get_info()[1], "|", products[0].Get_info()[2])
-	fmt.Println("product2: ", products[1].Get_info()[0], "|", products[1].Get_info()[1], "|", products[1].Get_info()[2])
-	fmt.Println("product3: ", products[2].Get_info()[0], "|", products[2].Get_info()[1], "|", products[2].Get_info()[2])
+	list1 = products[0].Get_info()
+	list2 = products[1].Get_info()
+	list3 = products[2].Get_info()
+
+	fmt.Println("product1: ", list1[0], "|", list1[1], "|", list1[2])
+	fmt.Println("product2: ", list2[0], "|", list2[1], "|", list2[2])
+	fmt.Println("product3: ", list3[0], "|", list3[1], "|", list3[2])
 }

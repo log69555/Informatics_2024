@@ -8,12 +8,6 @@ type Table struct {
 	color string
 }
 
-func (c *Character) change_class(new_class string) {
-	(*c).class = new_class
-}
-
-func (c *Character) change_level(new_level int) {
-	(*c).level = new_level
 func (t *Table) change_size(new_size int) {
 	(*t).size = new_size
 }
