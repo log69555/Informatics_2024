@@ -12,15 +12,7 @@ type Furniture struct {
 }
 
 func (f *Furniture) Sale(discount float64) error {
-	if f.price == 0 || f.brand == "" || f.name == "" || f.color == "" {
-		return errors.New("Вы заполнили не все поля для Furniture")
-	}
-
-	if 0 > discount {
-		return errors.New("Скидка должна быть в диапозоне от 0 до 100 процентов")
-	}
-
-	if 100 < discount {
+	if (0 > discount) || (100 < discount) {
 		return errors.New("Скидка должна быть в диапозоне от 0 до 100 процентов")
 	}
 
