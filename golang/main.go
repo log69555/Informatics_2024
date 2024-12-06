@@ -3,32 +3,12 @@ package main
 import (
 	"fmt"
 
-	"isuct.ru/informatics2022/lab4"
-	"isuct.ru/informatics2022/lab6"
-	"isuct.ru/informatics2022/lab7"
+	"isuct.ru/informatics2022/lab"
 )
 
 func main() {
-
 	fmt.Println("Шахов Егор")
-	fmt.Println("\n4 лабороторная")
-	lab4.Show_lab4()
-	fmt.Println("\n6 лабороторная")
-	lab6.Show_lab6()
-	fmt.Println("\n7 лабороторная")
+	fmt.Println("\n8 лабороторная")
 
-	fmt.Println("Шхов Егор")
-
-	fmt.Println("\n4 лабороторная")
-
-	lab4.Show_lab4()
-
-	fmt.Println("\n6 лабороторная")
-
-	lab6.Show_lab6()
-
-	fmt.Println("\n7 лабороторная")
-
-
-	lab7.Show_lab7()
+	lab.Show_lab4()
 }
