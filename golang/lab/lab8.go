@@ -16,4 +16,6 @@ func Show_lab8() {
 
 	defer file.Close()
 	file.Write(constants)
+	fmt.Println("Файл input.txt успешно создан")
 }
+
