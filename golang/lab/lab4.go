@@ -37,7 +37,6 @@ func get_value(f string) []float64 {
 		fmt.Println(err)
 		os.Exit(1)
 	}
-	defer file.Close()
 
 	data := make([]byte, 64)
 	constant := ""
@@ -63,6 +62,7 @@ func get_value(f string) []float64 {
 		list = append(list, f)
 	}
 
+	defer file.Close()
 	return list
 }
 
