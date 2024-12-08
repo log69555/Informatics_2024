@@ -1,0 +1,20 @@
+package lab8
+
+import (
+	"fmt"
+	"os"
+)
+
+func Show_lab8_1() {
+	constants := []byte("a = 1.35\nb = 0.98")
+	file, err := os.Create("input.txt")
+
+	if err != nil {
+		fmt.Println("Не удалось создать файл, ошибка:", err)
+		return
+	}
+
+	defer file.Close()
+	file.Write(constants)
+	fmt.Println("Файл input.txt успешно создан")
+}

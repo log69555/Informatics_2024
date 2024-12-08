@@ -6,6 +6,7 @@ import (
 	"isuct.ru/informatics2022/lab4"
 	"isuct.ru/informatics2022/lab6"
 	"isuct.ru/informatics2022/lab7"
+	"isuct.ru/informatics2022/lab8"
 )
 
 func main() {
@@ -22,4 +23,9 @@ func main() {
 	fmt.Println("\n7 лабороторная")
 
 	lab7.Show_lab7()
+
+	fmt.Println("\n8 лабороторная")
+
+	lab8.Show_lab8_1()
+	lab8.Show_lab8_2()
 }
