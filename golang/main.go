@@ -11,5 +11,4 @@ func main() {
 	fmt.Println("\n8 лабороторная")
 
 	lab.Show_lab8()
-	lab.Show_lab4()
 }
