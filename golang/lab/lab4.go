@@ -66,7 +66,7 @@ func get_value(f string) []float64 {
 	return list
 }
 
-func Show_lab4() {
+func Show_lab8_2() {
 	A := TaskA(1.14, 4.24, 0.62)
 	var B []float64 = []float64{0.35, 1.28, 3.51, 5.21, 4.16}
 

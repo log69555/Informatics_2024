@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func Show_lab8() {
+func Show_lab8_1() {
 	constants := []byte("a = 1.35\nb = 0.98")
 	file, err := os.Create("input.txt")
 
@@ -18,4 +18,3 @@ func Show_lab8() {
 	file.Write(constants)
 	fmt.Println("Файл input.txt успешно создан")
 }
-
