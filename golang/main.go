@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"isuct.ru/informatics2022/lab"
+	"isuct.ru/informatics2022/lab8"
 )
 
 func main() {
 	fmt.Println("Шахов Егор")
 	fmt.Println("\n8 лабороторная")
 
-	lab.Show_lab8()
+	lab8.Show_lab8()
 }
