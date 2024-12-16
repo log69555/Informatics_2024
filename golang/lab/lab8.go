@@ -1,4 +1,4 @@
-package lab8
+package lab
 
 import (
 	"fmt"
@@ -66,7 +66,19 @@ func get_value(f string) []float64 {
 	return list
 }
 
-func Show_lab8_2() {
+func Show_lab8() {
+	constants := []byte("a = 1.35\nb = 0.98")
+	file, err := os.Create("input.txt")
+
+	if err != nil {
+		fmt.Println("Не удалось создать файл, ошибка:", err)
+		return
+	}
+
+	defer file.Close()
+	file.Write(constants)
+	fmt.Println("Файл input.txt успешно создан")
+
 	A := TaskA(1.14, 4.24, 0.62)
 	var B []float64 = []float64{0.35, 1.28, 3.51, 5.21, 4.16}
 
