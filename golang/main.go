@@ -10,7 +10,6 @@ import (
 )
 
 func main() {
-
 	fmt.Println("Шахов Егор")
 
 	fmt.Println("Шхов Егор")
